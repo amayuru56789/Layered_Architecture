@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="461.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+   <children>
+      <TableView fx:id="tblReport" layoutX="13.0" layoutY="85.0" prefHeight="320.0" prefWidth="758.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="152.0" text="Order ID" />
+          <TableColumn fx:id="colItemCode" prefWidth="205.0" text="Item Code" />
+            <TableColumn fx:id="colQTY" prefWidth="219.0" text="orderQTY" />
+            <TableColumn fx:id="colDiscount" prefWidth="181.0" text="Discount" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="359.0" layoutY="414.0" onAction="#openItemForm" prefHeight="28.0" prefWidth="93.0" style="-fx-background-color: #2ecc71;" text="Manage Item" textFill="#ebe7e7" />
+      <Text layoutX="268.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Reports">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Separator layoutX="241.0" layoutY="64.0" prefHeight="5.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>
